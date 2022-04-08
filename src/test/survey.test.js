@@ -8,6 +8,7 @@ const SurveyModel           = require('../models/survey.model');
 describe("Survey Model", function(){
 
     it('Should return success message when input captcha matches.', function(){
+        console.log("qwe");
         let surveyModel = new SurveyModel();
         let captcha = surveyModel.captcha;
         let result = surveyModel.verifyCaptchaInput(captcha);
