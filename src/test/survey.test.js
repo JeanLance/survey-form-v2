@@ -25,7 +25,8 @@ describe("Survey Model", function(){
     it('Should return a captcha string.', function(){
         let surveyModel = new SurveyModel();
         let captcha = surveyModel.captcha;
-
+        let x = captcha;
+        
         expect(captcha).to.equal(captcha);
     });
 });
